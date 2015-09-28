@@ -15,7 +15,7 @@ body {
 	min-height: 100%;
 	min-width: 970px;
 	height: auto!important;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 .wrapper:after {
 	content: "";
@@ -25,7 +25,74 @@ body {
 .page-footer {
 	height: 61px;
 	margin-top: -61px;
+	min-width: 970px;
 }
+
+/* Прибиваем футер к низу - Конец */
+
+/* Шапка */
+.container-big {
+	max-width: 1200px;
+	min-width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.page-header {
+	height: 97px;
+	background: url(../img/bg-head.jpg) top center repeat-x;
+	position: relative;
+	margin-bottom: 39px;
+	border-bottom: 7px solid #FFFFFF; 
+}
+.page-header .header-logo-link {
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+.page-header .header-logo-text {
+	position: absolute;
+	left: -9999px;
+}
+.page-header .socials {
+	position: absolute;
+	right: 0;
+	top: 26px;
+}
+/* Шапка конец */
+
+/*Блок социальных иконок */
+.socials {
+	margin: 0;
+	padding: 0;
+	min-width: 260px;
+}
+.socials .socials-item {
+	list-style: none;
+	display: inline-block;
+	height: 44px;
+	width: 42px;
+	margin-left: 19px; 
+}
+.socials .socials-item:first-child {
+	margin-left: 0;
+}
+.socials .socials-link {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-indent: -9999px;
+	background: url(../img/social.png) no-repeat;
+}
+.socials .socials-link.vk {background-position: -317px -5px}
+.socials .socials-link.vk:hover {background-position: -369px -5px}
+.socials .socials-link.tw {background-position: -213px -5px}
+.socials .socials-link.tw:hover {background-position: -265px -5px}
+.socials .socials-link.fb {background-position: -5px -5px}
+.socials .socials-link.fb:hover {background-position: -57px -5px}
+.socials .socials-link.git {background-position: -109px -5px}
+.socials .socials-link.git:hover {background-position: -161px -5px}
+/* Блок социальных иконок - Конец */
 
 /* Футер */
 .page-footer {
