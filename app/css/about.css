@@ -1,0 +1,126 @@
+/* Общие стили для всех секций */
+.aboutbox {
+	background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px; 
+}
+.aboutbox .aboutbox-header {
+	font-family: 'OpenSans_SemiBold';
+	font-size: 24px;
+	font-weight: normal;
+	color: #3ba8c0;
+	border-bottom: 2px #3ba8c0 solid;
+	margin: 0 0 23px 0;
+	padding: 13px 23px;
+	display: inline-block; 
+}
+.aboutbox-body {
+	padding-bottom: 40px;
+}
+/* Общие стили для всех секций - Конец*/
+
+/* Лицо */
+.image-wrap {
+	float: left;
+	margin-left:55px;
+	margin-top: 18px;
+}
+.avatar-box {
+	width: 142px;
+	height: 142px;
+	border-radius: 50% 50%;
+	overflow: hidden;
+	border: 5px solid #3ba9ca;
+}
+.avatar {
+	width: 100%;
+}
+/* Лицо - Конец */
+
+/* Список анкетных данных */
+.aboutbox .worksheet-wrap {
+	float: right;
+	width: 400px;
+}
+.worksheet-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.worksheet-info {
+	margin-left: 25px; 
+	padding-left:10px;
+	max-width: 260px;
+}
+.worksheet-item {
+	margin-bottom: 8px; 
+}
+.worksheet-what {
+	font-family: 'OpenSans_SemiBold';
+	font-size: 14px;
+	float: left;
+}
+.worksheet-info {
+	font-family: 'OpenSans_Regular';
+	font-size: 14px;
+	overflow: hidden;
+	max-width: 218px;
+}
+/* Список анкетных данных - Конец */
+
+/* Ключевые навыки */
+.worksheet-info .skills-list {
+	width: 224px;
+	padding: 0;
+	list-style: none;
+}
+.skills-list .skill-item {
+	display: inline-block;
+	font-family: 'OpenSans_SemiBold';
+	border-radius: 4px;
+	padding: 0 7px;
+	margin-right: 6px;
+	color: #1e7465;
+	line-height: 1.2;
+	min-width: 40px;
+	text-align: center;
+}
+
+/* Опыт работы и образование */
+.aboutbox .aboutbox-list {
+	list-style: none;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+.aboutbox .aboutbox-item {
+	padding: 0 0 0 76px;
+	margin-bottom: 20px;
+	min-height: 55px;
+	width: 500px;
+	line-height: 1.4;
+}
+.aboutbox .aboutbox-item:last-child {
+	margin-bottom: 0;
+}
+.aboutbox-item .where {
+	font-family: 'OpenSans_SemiBold';
+	font-size: 14px;
+}
+.aboutbox-item .period {
+	font-family: 'OpenSans_Regular';
+	font-size: 14px;
+	line-height: 1.2;
+}
+.icon-work {
+	background: url(../img/pt_case.png) no-repeat;
+}
+.icon-school {
+	background: url(../img/pt_school.png) no-repeat;
+}
+.icon-graduate {
+	background: url(../img/pt_graduate.png) no-repeat;
+}
+.icon-file {
+	background: url(../img/pt_file.png) no-repeat;
+}
+
