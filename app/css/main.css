@@ -146,6 +146,14 @@ body {
 .navigation .navigation-item:hover {
 	background: #dcdbdb;
 }
+/* Навигация - Конец */
+
+/* Главная область */
+.variable-content {
+	width: 650px;
+	float: right;
+}
+/* Главная область - Конец*/
 
 /* Футер */
 .page-footer {
