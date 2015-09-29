@@ -91,14 +91,6 @@
 }
 .skills-list .skill-item {
 	display: inline-block;
-	font-family: 'OpenSans_SemiBold';
-	border-radius: 4px;
-	padding: 0 7px;
-	margin-right: 6px;
-	color: #1e7465;
-	line-height: 1.2;
-	min-width: 40px;
-	text-align: center;
 }
 
 /* Опыт работы и образование */

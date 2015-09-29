@@ -141,7 +141,6 @@ body {
 	background: -ms-linear-gradient(top, #7de8cd 0%,#3fb79a 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #7de8cd 0%,#3fb79a 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7de8cd', endColorstr='#3fb79a',GradientType=0 ); /* IE6-9 */
-	copy;
 	-webkit-box-shadow: inset 0px 0px 1px 10px rgba(47,161,132,.5);
 	-moz-box-shadow: inset 0px 0px 1px 1px rgba(47,161,132,.5);
 	box-shadow: inset 0px 0px 1px 1px rgba(47,161,132,.5);
@@ -176,6 +175,92 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdbdb', endColorstr='#bfbcbc',GradientType=0 ); /* IE6-9 */
 }
 /* Навигация - Конец */
+
+/* Контакты */
+.contacts {
+	overflow: hidden;
+	font-style: normal;
+	border-radius: 4px;
+	margin-bottom: 26px;
+	-webkit-box-shadow: 0px 2px 6px -2px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 2px 6px -2px rgba(0,0,0,1);
+	box-shadow: 0px 2px 6px -2px rgba(0,0,0,1);
+}
+.contacts .contacts-header {
+	font-family: 'OpenSans_SemiBold';
+	font-size: 20px;
+	font-weight: normal;
+	color: #d0982c;
+	padding: 14px 0 14px 28px;
+	margin: 0;
+	display: block;
+	background: #a9a7a7; /* Old browsers */
+	background: -moz-linear-gradient(top, #a9a7a7 0%, #a9a7a7 0%, #f4ce82 0%, #dfb866 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a9a7a7), color-stop(0%,#a9a7a7), color-stop(0%,#f4ce82), color-stop(100%,#dfb866)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #a9a7a7 0%,#a9a7a7 0%,#f4ce82 0%,#dfb866 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #a9a7a7 0%,#a9a7a7 0%,#f4ce82 0%,#dfb866 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #a9a7a7 0%,#a9a7a7 0%,#f4ce82 0%,#dfb866 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #a9a7a7 0%,#a9a7a7 0%,#f4ce82 0%,#dfb866 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9a7a7', endColorstr='#dfb866',GradientType=0 ); /* IE6-9 */
+	-webkit-box-shadow: inset 0px 0px 1px 10px rgba(207,164,179,.5);
+	-moz-box-shadow: inset 0px 0px 1px 1px rgba(207,164,179,.5);
+	box-shadow: inset 0px 0px 1px 1px rgba(207,164,179,.5);
+	
+}
+.contacts .contacts-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.contacts .contacts-item {
+	padding-left: 19px;
+	font-family: 'OpenSans_Regular';
+	font-size: 14px;
+	height: 39px;
+	border-bottom: 1px solid #d6d5d3;
+	background: #a9a7a7; /* Old browsers */
+	background: -moz-linear-gradient(top, #a9a7a7 0%, #a9a7a7 0%, #ffffff 0%, #f7f6f6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a9a7a7), color-stop(0%,#a9a7a7), color-stop(0%,#ffffff), color-stop(100%,#f7f6f6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #a9a7a7 0%,#a9a7a7 0%,#ffffff 0%,#f7f6f6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #a9a7a7 0%,#a9a7a7 0%,#ffffff 0%,#f7f6f6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #a9a7a7 0%,#a9a7a7 0%,#ffffff 0%,#f7f6f6 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #a9a7a7 0%,#a9a7a7 0%,#ffffff 0%,#f7f6f6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9a7a7', endColorstr='#f7f6f6',GradientType=0 ); /* IE6-9 */
+	copy
+}
+.contacts .contacts-item:first-child {
+	border-top:none;
+}
+.contacts .contacts-item:hover {
+	background: #fbfbfb; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fbfbfb 0%, #f2e7d0 100%, #a9a7a7 100%, #a9a7a7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbfbfb), color-stop(100%,#f2e7d0), color-stop(100%,#a9a7a7), color-stop(100%,#a9a7a7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fbfbfb 0%,#f2e7d0 100%,#a9a7a7 100%,#a9a7a7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fbfbfb 0%,#f2e7d0 100%,#a9a7a7 100%,#a9a7a7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fbfbfb 0%,#f2e7d0 100%,#a9a7a7 100%,#a9a7a7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fbfbfb 0%,#f2e7d0 100%,#a9a7a7 100%,#a9a7a7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfb', endColorstr='#a9a7a7',GradientType=0 ); /* IE6-9 */
+}
+.contacts-item .icon-mail {
+	float:left;
+}
+.contacts-item .contact-link {
+	float:right;
+	width:160px;
+	padding: 10px 0;
+	color: #727070;
+}
+.contacts-item .contact-link a {
+	color: #727070;
+	text-decoration: none;
+	display: block;
+}
+.contacts-item .contact-link a:hover {
+	color: #727070;
+	text-decoration: underline;
+	display: block;
+}
+/* Контакты - Конец*/
 
 /* Главная область */
 .variable-content {
