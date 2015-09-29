@@ -39,7 +39,7 @@ body {
 	position: relative;
 }
 .page-header {
-	height: 97px;
+	height: 90px;
 	background: url(../img/bg-head.jpg) top center repeat-x;
 	position: relative;
 	margin-bottom: 39px;
@@ -48,7 +48,7 @@ body {
 .page-header .header-logo-link {
 	position: absolute;
 	top: 10px;
-	left: 0;
+	left: 10px;
 }
 .page-header .header-logo-text {
 	position: absolute;
@@ -93,6 +93,59 @@ body {
 .socials .socials-link.git {background-position: -109px -5px}
 .socials .socials-link.git:hover {background-position: -161px -5px}
 /* Блок социальных иконок - Конец */
+
+/* Сайдбар*/
+.sidebar {
+	width: 250px;
+	float: left;
+}
+
+/* Навигация */
+.navigation {
+	overflow: hidden;
+	background: #f8f8f8;
+	border-radius: 4px;
+	margin-bottom: 26px;
+}
+.navigation .navigation-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.navigation .navigation-item {
+	border-top: 2px solid #5ecfb3;
+}
+.navigation .navigation-item:first-child {
+	border-top:none;
+}
+/* Навигация - текущий пункт меню */
+.navigation .navigation-item.current {
+	background: #5ecfb3;
+	margin: 0;
+	border-bottom: none;
+	padding-left: 11px;
+	margin-bottom: -2px; /* Хак */  
+}
+.navigation .navigation-item.current .navigation-link {
+	color: #1e7465;
+	font-size: 22px;
+}
+/*Навигация - текущий пункт меню - конец */
+.navigation .navigation-link {
+	font-family: 'OpenSans_SemiBold';
+	display: block;
+	font-size: 20px;
+	text-decoration: none;
+	color: #727070;
+	margin-left: 16px;
+	padding: 20px 0px;
+}
+.navigation .navigation-link:hover {
+	color: #727070;
+}
+.navigation .navigation-item:hover {
+	background: #dcdbdb;
+}
 
 /* Футер */
 .page-footer {
