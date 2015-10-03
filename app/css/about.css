@@ -71,7 +71,7 @@
 	margin-bottom: 7px; 
 }
 .worksheet-what {
-	font-family: 'OpenSans_SemiBold';
+	font-family: 'OpenSans_Semibold';
 	font-size: 14px;
 	float: left;
 }
@@ -84,13 +84,43 @@
 /* Список анкетных данных - Конец */
 
 /* Ключевые навыки */
+.skills-head {
+	margin-top: 2px;
+}
 .worksheet-info .skills-list {
 	width: 224px;
 	padding: 0;
+	margin-left: 10px;
 	list-style: none;
 }
 .skills-list .skill-item {
 	display: inline-block;
+	height: 25px;
+	background: url(../img/i_prof2.png) repeat-x 0 0;
+	font-family: 'OpenSans_Bold';
+	font-size: 9px;
+	color: #1e7465;
+	position: relative;
+	margin-right: 20px;
+	padding: 6px 3px 0px 3px;	 
+}
+.skills-list .skill-item:before {
+	background: url(../img/i_prof1.png) no-repeat 0 0;
+	content: '';
+	position: absolute;
+	width: 13px;
+	height: 25px;
+	left: -13px; 
+	top: 0px;
+}
+.skills-list .skill-item:after {
+	background: url(../img/i_prof3.png) no-repeat 0 0;
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 25px;
+	right: -8px;
+	top: 0px;
 }
 
 /* Опыт работы и образование */
