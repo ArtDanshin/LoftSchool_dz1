@@ -178,33 +178,31 @@ body {
 
 /* Контакты */
 .contacts {
-	overflow: hidden;
 	font-style: normal;
-	border-radius: 4px;
 	margin-bottom: 26px;
-	-webkit-box-shadow: 0px 2px 6px -2px rgba(0,0,0,1);
-	-moz-box-shadow: 0px 2px 6px -2px rgba(0,0,0,1);
-	box-shadow: 0px 2px 6px -2px rgba(0,0,0,1);
 }
 .contacts .contacts-header {
+	border-radius: 4px 4px 0 0;
 	font-family: 'OpenSans_SemiBold';
 	font-size: 20px;
 	font-weight: normal;
+	text-shadow: 0px 1px 0 #efd6a4;
 	color: #d0982c;
 	padding: 14px 0 14px 28px;
 	margin: 0;
 	display: block;
-	background: #ebc272; /* Old browsers */
-	background: -moz-linear-gradient(top, #a9a7a7 0%, #a9a7a7 0%, #f4ce82 0%, #dfb866 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a9a7a7), color-stop(0%,#a9a7a7), color-stop(0%,#f4ce82), color-stop(100%,#dfb866)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #a9a7a7 0%,#a9a7a7 0%,#f4ce82 0%,#dfb866 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #a9a7a7 0%,#a9a7a7 0%,#f4ce82 0%,#dfb866 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #a9a7a7 0%,#a9a7a7 0%,#f4ce82 0%,#dfb866 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #a9a7a7 0%,#a9a7a7 0%,#f4ce82 0%,#dfb866 100%); /* W3C */
-	-webkit-box-shadow: inset 0px 0px 1px 10px rgba(207,164,179,.5);
-	-moz-box-shadow: inset 0px 0px 1px 1px rgba(207,164,179,.5);
-	box-shadow: inset 0px 0px 1px 1px rgba(207,164,179,.5);
-	
+	background: #f4ce82; /* Old browsers */
+	background: -moz-linear-gradient(top, #f4ce82 0%, #dfb866 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4ce82), color-stop(100%,#dfb866)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f4ce82 0%,#dfb866 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f4ce82 0%,#dfb866 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f4ce82 0%,#dfb866 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f4ce82 0%,#dfb866 100%); /* W3C */
+	border: 1px #dbb15f solid;
+	border-top-color: #e7bf6f;
+	-webkit-box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,0.3);
+	-moz-box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,0.3);
+	box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,0.3);
 }
 .contacts .contacts-list {
 	list-style: none;
@@ -212,11 +210,9 @@ body {
 	margin: 0;
 }
 .contacts .contacts-item {
-	padding-left: 19px;
-	font-family: 'OpenSans_Regular';
-	font-size: 14px;
-	height: 39px;
-	border-bottom: 1px solid #f6f5f5;
+	height: 37px;
+	border: 1px solid #d6d5d3;
+	border-top: 0px;
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top, #a9a7a7 0%, #a9a7a7 0%, #ffffff 0%, #f7f6f6 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a9a7a7), color-stop(0%,#a9a7a7), color-stop(0%,#ffffff), color-stop(100%,#f7f6f6)); /* Chrome,Safari4+ */
@@ -224,10 +220,44 @@ body {
 	background: -o-linear-gradient(top, #a9a7a7 0%,#a9a7a7 0%,#ffffff 0%,#f7f6f6 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #a9a7a7 0%,#a9a7a7 0%,#ffffff 0%,#f7f6f6 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #a9a7a7 0%,#a9a7a7 0%,#ffffff 0%,#f7f6f6 100%); /* W3C */
-	copy
+}
+.contacts .contacts-item .link {
+	display: block;
+	position: relative;
+	font-size: 14px;
+	font-family: 'OpenSans_regular';
+	color: #727070;
+	text-decoration: none;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	padding: 8px 0 0 79px;
+}
+.contacts .contacts-item .link:before {
+	position: absolute;
+	width: 40px;
+	height: 38px;
+	left: 19px;
+	top: 0px;
+	content: '';
+}
+.contacts .contacts-item .mail:before {
+	background: url(../img/ct_email.png);
+}
+.contacts .contacts-item .phone:before {
+	background: url(../img/ct_phone.png);
+}
+.contacts .contacts-item .skype:before {
+	background: url(../img/ct_skype.png);
 }
 .contacts .contacts-item:first-child {
-	border-top:none;
+	border-top:1px solid #d6d5d3;
+}
+.contacts .contacts-item:last-child {
+	border-radius: 0 0 4px 4px;
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(255,255,255,0.3);
+	-moz-box-shadow: 0px 1px 1px 0px rgba(255,255,255,0.3);
+	box-shadow: 0px 1px 1px 0px rgba(255,255,255,0.3);
 }
 .contacts .contacts-item:hover {
 	background: #faf5ed; /* Old browsers */
@@ -238,24 +268,9 @@ body {
 	background: -ms-linear-gradient(top,  #fbfbfb 0%,#f2e7d0 100%,#a9a7a7 100%,#a9a7a7 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #fbfbfb 0%,#f2e7d0 100%,#a9a7a7 100%,#a9a7a7 100%); /* W3C */
 }
-.contacts-item .icon-mail {
-	float:left;
-}
-.contacts-item .contact-link {
-	float:right;
-	width:160px;
-	padding: 10px 0;
-	color: #727070;
-}
-.contacts-item .contact-link a {
-	color: #727070;
-	text-decoration: none;
-	display: block;
-}
-.contacts-item .contact-link a:hover {
+.contacts .contacts-item .link:hover {
 	color: #727070;
 	text-decoration: underline;
-	display: block;
 }
 /* Контакты - Конец*/
 
