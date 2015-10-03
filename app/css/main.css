@@ -44,6 +44,9 @@ body {
 	position: relative;
 	margin-bottom: 34px;
 	border-bottom: 7px solid #FFFFFF; 
+	-webkit-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
 }
 .page-header .header-logo-link {
 	position: absolute;
@@ -283,6 +286,9 @@ body {
 	background: #ffffff;
 	font-family: 'OpenSans_Light';
 	color: #727070;
+	-webkit-box-shadow: 0px -1px 0px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px -1px 0px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px -1px 0px 0px rgba(0,0,0,0.1);
 }
 .page-footer .container {
 	padding-top: 15px;
