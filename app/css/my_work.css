@@ -4,15 +4,15 @@
 	border-radius: 4px;
 	border: 1px #bfbfbf solid;
 	margin-bottom: 26px;
-	padding: 0px 43px 0px 0px; /* Костыль с хэдером*/
 }
 .workbox .workbox-header {
 	font-family: 'OpenSans_SemiBold';
 	font-size: 24px;
 	font-weight: normal;
 	color: #FFFFFF;
-	margin: 0 0 22px 0;
-	padding: 13px 0px 13px 43px; /* Костыль с хэдером*/
+	box-sizing: border-box;
+	margin: 0 0 22px 0px;
+	padding: 13px 0px 13px 43px;
 	display: inline-block;
 	width: 100%; 
 	background: #a9a7a7; /* Old browsers */
@@ -22,10 +22,97 @@
 	background: -o-linear-gradient(top, #a9a7a7 0%,#a9a7a7 1%,#7b7979 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #a9a7a7 0%,#a9a7a7 1%,#7b7979 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #a9a7a7 0%,#a9a7a7 1%,#7b7979 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9a7a7', endColorstr='#7b7979',GradientType=0 ); /* IE6-9 */
-	copy
 }
 .workbox-body {
 	padding-bottom: 40px;
 }
+.workbox-body .worklist {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-left: 41px;
+	margin-top: 15px;
+}
+.worklist .worklist-item {
+	display: inline-block;
+	width: 164px;
+	border-radius: 8px;
+	border: 1px #bababa solid; 
+	margin-right: 33px;
+	margin-bottom: 32px;
+	vertical-align: top;
+	background: #ffffff;
+}
+.worklist-item .wrap-workimg {
+	position: relative;
+	width: 166px;
+	height: 118px;
+}
+.wrap-workimg .workimg {
+	border-radius: 8px 8px 0 0;
+}
+.wrap-workimg .worklink-img {
+	display: none;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.worklist-item .worklink {
+	display: block;
+	color: #727070;
+	font-family: "OpenSans_Semibold";
+	font-size: 13.35px;
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+	background-color: #f2f2f2;
+	border-top: 1px #bababa solid;
+	padding: 8px 0;
+}
+.worklist-item .workdescription {
+	color: #727070;
+	font-family: 'OpenSans_Light';
+	font-size: 12px;
+	text-align: center;
+	margin: 5px 0;
+}
+.worklist-item .wrap-workadd {
+	position: relative;
+	width: 100%;
+	height: 134px; 
+	border-radius: 8px;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e9e8e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e9e8e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#e9e8e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#e9e8e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#e9e8e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%,#e9e8e8 100%); /* W3C */
+}
+.wrap-workadd .workadd {
+	position: absolute;
+	display: block;
+	font-family: "OpenSans_Semibold";
+	font-size: 14px;
+	color: #727070;
+	text-decoration: none;
+	padding-top: 90px;
+	padding-left: 23px;
+	width: 100%;
+	height: 100%;
+
+}
+.wrap-workadd .workadd:before {
+	position: absolute;
+	background: url(../img/workadd.png) no-repeat 0 0;
+	width: 54px;
+	height: 55px;
+	top: 24px;
+	left: 57px;
+	content: '';
+}
+
+
+
 /* Общие стили для всех секций - Конец*/
