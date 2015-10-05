@@ -27,24 +27,27 @@
 	padding-bottom: 40px;
 }
 .feedbox-body .feedform {
-	width: 405px;
+	width: 395px;
 	margin: 0 auto;
+	margin-top: 10px;
 }
 .feedform .feedname {
 	float: left;
-	width: 190px;
+	width: 183px;
 	margin-bottom: 10px;
 }
 .feedform .feedmail {
 	float: right;
-	width: 190px;
+	width: 183px;
 	margin-bottom: 10px;
 }
 .feedform .feed-head {
-	forn-family: "OpenSans_Regular";
+	font-family: "OpenSans_Semibold";
 	font-size: 14px;
 	color: #727070;
 	padding: 0;
+	margin: 0;
+	margin-bottom: 7px;
 }
 .feedform .feed-input {
 	width: 100%;
@@ -63,17 +66,23 @@
 	padding-top: 0;
 }
 .feedname .feed-input.name {
-	height: 40px;
+	height: 41px;
 }
 
 .feedmail .feed-input.mail {
-	height: 40px;
+	height: 41px;
 }
 .feedform .feedmessage {
 	width: 100%;
+	margin-bottom: 13px;
 }
 .feedmessage .feed-input.message {
-	height: 180px;
+	height: 170px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.feedform .feedcapcha {
+	margin-bottom: 30px;
 }
 .feedcapcha .capchabody{
 	width: 100%;
@@ -94,6 +103,83 @@
 .capchabody .wrap-capcha-input{
 	float: right;
 	width: 190px;
+}
+.wrap-capcha-input .feed-input.capcha {
+	height: 32px;
+	margin-top: 20px;
+}
+.feedform .feedbuttons {
+	width: 100%;
+}
+.feedbuttons .wrap-button-submit {
+	float: left;
+	margin-left: 27px;
+	width: 123px;
+	height: 41px;
+	padding-top: 1px;
+	padding-left: 1px;
+	border-radius: 6px;
+	background: #57d2b4; /* Old browsers */
+	background: -moz-linear-gradient(top, #57d2b4 1%, #3aa187 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#57d2b4), color-stop(100%,#3aa187)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #57d2b4 1%,#3aa187 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #57d2b4 1%,#3aa187 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #57d2b4 1%,#3aa187 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #57d2b4 1%,#3aa187 100%); /* W3C */
+}
+.wrap-button-submit .button-submit {
+	display: inline-block;
+	margin-top: 0px;
+	width: 122px;
+	height: 40px;
+	border-width: 0px;
+	border-radius: 6px;
+	border-top: 1px #8fe7d1 solid;
+	background: #5edbbc; /* Old browsers */
+	background: -moz-linear-gradient(top, #5edbbc 0%, #3aa187 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5edbbc), color-stop(100%,#3aa187)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #5edbbc 0%,#3aa187 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #5edbbc 0%,#3aa187 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #5edbbc 0%,#3aa187 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #5edbbc 0%,#3aa187 100%); /* W3C */
+	font-family: "OpenSans_Semibold";
+	font-size: 14px;
+	color: #1e7465;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+.feedbuttons .wrap-button-clear {
+	float: right;
+	margin-right: 17px;
+	width: 123px;
+	height: 41px;
+	padding-top: 1px;
+	padding-left: 1px;
+	border-radius: 6px;
+	background: #d2d2d2; /* Old browsers */
+	background: -moz-linear-gradient(top, #d2d2d2 0%, #c5c5c5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d2d2d2), color-stop(100%,#c5c5c5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #d2d2d2 0%,#c5c5c5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #d2d2d2 0%,#c5c5c5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #d2d2d2 0%,#c5c5c5 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #d2d2d2 0%,#c5c5c5 100%); /* W3C */
+}
+.wrap-button-clear .button-clear {
+	display: inline-block;
+	width: 122px;
+	height: 40px;
+	border-width: 0px;
+	border-radius: 6px;
+	background: #fcfcfc; /* Old browsers */
+	background: -moz-linear-gradient(top, #fcfcfc 0%, #e9e8e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#e9e8e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fcfcfc 0%,#e9e8e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fcfcfc 0%,#e9e8e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fcfcfc 0%,#e9e8e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #fcfcfc 0%,#e9e8e8 100%); /* W3C */
+	font-family: "OpenSans_Semibold";
+	font-size: 14px;
+	color: #727070;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
 }
 
 
