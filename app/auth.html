@@ -28,14 +28,21 @@
 				<div class="wrap-auth-form">
 					<form action="" class="authform">
 						<div class="wrap-auth-form-inner">
-							<input type="text" class="auth-mail" name="mail" placeholder="Введите Email">
-							<input type="text" class="auth-password" name="password" placeholder="Введите пароль">
-							<div class="auth-remember">
-								<label class="auth-remember-head">
-									<input type="checkbox" class="auth-remember-checkbox" name="remember">Запомнить меня?
-								</label>
+							<div class="wrap-auth-input">
+								<input type="text" class="auth-input" name="mail" placeholder="Введите Email">
+								<div class="auth-input-img mail"></div>
 							</div>
-							<input type="button" class="auth-button" value="Войти">
+							<div class="wrap-auth-input">
+								<input type="text" class="auth-input" name="password" placeholder="Введите пароль">
+								<div class="auth-input-img password"></div>
+							</div>
+							<div class="auth-remember">
+									<input type="checkbox" class="auth-remember-checkbox" name="remember" id="remember_me">
+									<label class="auth-remember-head" for="remember_me"><span></span>Запомнить меня?</label>
+							</div>
+							<div class="wrap-auth-button">
+								<input type="button" class="auth-button" value="Войти">
+							</div>
 						</div>
 					</form>
 				</div>
