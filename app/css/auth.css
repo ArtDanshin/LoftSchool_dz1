@@ -1,0 +1,40 @@
+.wrap-auth {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 330px;
+	width: 305px;
+	margin-top: -165px;
+	margin-left: -152px;
+}
+.wrap-auth-form {
+	height: 284px;
+	width: 100%;
+	border-radius: 8px;
+	border: 1px #b7b7b7 solid;
+	background: #fbfbfa; /* Old browsers */
+	background: -moz-linear-gradient(top, #fbfbfa 0%, #f0eeed 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbfbfa), color-stop(100%,#f0eeed)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fbfbfa 0%,#f0eeed 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fbfbfa 0%,#f0eeed 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fbfbfa 0%,#f0eeed 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #fbfbfa 0%,#f0eeed 100%); /* W3C */
+}
+.wrap-auth-form-inner {
+	margin: 39px 0 0 37px;
+	width: 230px;
+}
+.wrap-auth-form-inner .auth-mail {
+	width: 100%;
+	height: 39px;
+	margin-bottom: 24px;
+	border-radius: 6px;
+	border: 1px #d6d5d3 solid;
+}
+.wrap-auth-form-inner .auth-password {
+	width: 100%;
+	height: 39px;
+	margin-bottom: 24px;
+	border-radius: 6px;
+	border: 1px #d6d5d3 solid;
+}
