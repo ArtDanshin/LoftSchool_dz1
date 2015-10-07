@@ -126,13 +126,46 @@
 								</li>
 								<li class="worklist-item">
 									<div class="wrap-workadd">
-										<a class="workadd" href="">Добавить проект</a>
+										<a class="workadd" href="#">Добавить проект</a>
 									</div>
 								</li>
 							</ul>
 						</div>
 					</section>
 				</div>
+			</div>
+			<div class="popup">
+				<p class="popup-head">Добавление проекта</p>
+				<div class="wrap-popup-form">
+					<form action="" class="popupform">
+						<div class="wrap-popup-form-inner">
+							<div class="wrap-popup-input">
+								<p class="popup-input-head">Название проекта</p>
+								<input type="text" class="popup-input" name="nameproj" placeholder="Введите название" required >
+							</div>
+							<div class="wrap-popup-input">
+								<p class="popup-input-head">Картинка проекта</p>
+								<div class="wrap-popup-input-file">
+									<input type="file" class="popup-input-file" name="fileproj" placeholder="Загрузите изображение" required >
+									<div class="popup-input-fake">Загрузите изображение</div>
+									<div class="popup-input-img"></div>
+								</div>
+							</div>
+							<div class="wrap-popup-input">
+								<p class="popup-input-head">URL проекта</p>
+								<input type="text" class="popup-input" name="urlproj" placeholder="Добавьте ссылку" required >
+							</div>
+							<div class="wrap-popup-input">
+								<p class="popup-input-head">Описание</p>
+								<textarea class="popup-input-textarea" name="descproj" placeholder="Пара слов о Вашем проекте" required ></textarea>
+							</div>
+							<div class="wrap-popup-button">
+								<input type="button" class="popup-button" value="Добавить">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
 			</div>
 		</div>
 	</div>
@@ -146,6 +179,8 @@
 		</div>
 	</footer>
 	<script src="bower/jquery/dist/jquery.js"></script>
+	<script src="js/jquery.bpopup.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/my_work.js"></script>
 </body>
 </html>
