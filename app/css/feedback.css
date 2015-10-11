@@ -27,18 +27,18 @@
 	padding-bottom: 40px;
 }
 .feedbox-body .feedform {
-	width: 395px;
+	width: 390px;
 	margin: 0 auto;
 	margin-top: 10px;
 }
 .feedform .feedname {
 	float: left;
-	width: 183px;
+	width: 180px;
 	margin-bottom: 10px;
 }
 .feedform .feedmail {
 	float: right;
-	width: 183px;
+	width: 180px;
 	margin-bottom: 10px;
 }
 .feedform .feed-head {
@@ -62,24 +62,33 @@
 	background: linear-gradient(to bottom, #fbfcfd 0%,#f3f3f3 100%); /* W3C */
 	font-family: "Opensans_Ligth";
 	font-size: 12px;
+	color: #c7c6c6;
 	padding-left: 9px;
 	padding-top: 0;
 }
+.feedform .feed-input::-moz-placeholder {
+	color: #c7c6c6;
+}
+.feedform .feed-input::-webkit-input-placeholder {
+	color: #c7c6c6;
+}
 .feedname .feed-input.name {
-	height: 41px;
+	padding: 13px 0px 13px 10px;
 }
 
 .feedmail .feed-input.mail {
-	height: 41px;
+	padding: 12px 0px 12px 10px;
 }
 .feedform .feedmessage {
 	width: 100%;
-	margin-bottom: 13px;
+	margin-bottom: 10px;
+	clear: both;
 }
 .feedmessage .feed-input.message {
-	height: 170px;
-	padding-top: 10px;
-	padding-left: 10px;
+	height: 158px;
+	width: 380px;
+	padding: 12px 10px 12px 10px;
+	resize: none;
 }
 .feedform .feedcapcha {
 	margin-bottom: 30px;
@@ -102,10 +111,10 @@
 }
 .capchabody .wrap-capcha-input{
 	float: right;
-	width: 190px;
+	width: 180px;
 }
 .wrap-capcha-input .feed-input.capcha {
-	height: 32px;
+	padding: 8px 0px 8px 10px;
 	margin-top: 20px;
 }
 .feedform .feedbuttons {
@@ -115,7 +124,7 @@
 	float: left;
 	margin-left: 27px;
 	width: 123px;
-	height: 41px;
+	height: 36px;
 	padding-top: 1px;
 	padding-left: 1px;
 	border-radius: 6px;
@@ -131,7 +140,7 @@
 	display: inline-block;
 	margin-top: 0px;
 	width: 122px;
-	height: 40px;
+	height: 35px;
 	border-width: 0px;
 	border-radius: 6px;
 	border-top: 1px #8fe7d1 solid;
@@ -147,11 +156,17 @@
 	color: #1e7465;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
 }
+.wrap-button-submit .button-submit:active, .wrap-button-submit .button-submit:focus {
+  outline: none;
+}
+.wrap-button-submit .button-submit::-moz-focus-inner {
+  border: 0;
+}
 .feedbuttons .wrap-button-clear {
 	float: right;
 	margin-right: 17px;
 	width: 123px;
-	height: 41px;
+	height: 36px;
 	padding-top: 1px;
 	padding-left: 1px;
 	border-radius: 6px;
@@ -166,7 +181,7 @@
 .wrap-button-clear .button-clear {
 	display: inline-block;
 	width: 122px;
-	height: 40px;
+	height: 35px;
 	border-width: 0px;
 	border-radius: 6px;
 	background: #fcfcfc; /* Old browsers */
@@ -180,6 +195,12 @@
 	font-size: 14px;
 	color: #727070;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+.wrap-button-clear .button-clear:active, .wrap-button-clear .button-clear:focus {
+  outline: none;
+}
+.wrap-button-clear .button-clear::-moz-focus-inner {
+  border: 0;
 }
 
 
