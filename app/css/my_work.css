@@ -314,6 +314,12 @@
 	color: #1e7465;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
 }
+.wrap-popup-button .popup-button:active, .wrap-popup-button .popup-button:focus {
+  outline: none;
+}
+.wrap-popup-button .popup-button::-moz-focus-inner {
+  border: 0;
+}
 .popup-close {
 	display: block;
 	position: absolute;
