@@ -35,10 +35,10 @@
 }
 .worklist .worklist-item {
 	display: inline-block;
-	width: 164px;
+	width: 166px;
 	border-radius: 8px;
 	border: 1px #bababa solid; 
-	margin-right: 33px;
+	margin-right: 31px;
 	margin-bottom: 32px;
 	vertical-align: top;
 	background: #ffffff;
@@ -47,16 +47,39 @@
 	position: relative;
 	width: 166px;
 	height: 118px;
+	overflow: hidden;
 }
 .wrap-workimg .workimg {
 	border-radius: 8px 8px 0 0;
+	width: 100%;
+	height: 100%;
 }
 .wrap-workimg .worklink-img {
-	display: none;
 	position: absolute;
+	font-family: 'OpenSans_Regular';
+	font-size: 13.35px;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 45px;
 	top: 0px;
 	width: 100%;
 	height: 100%;
+	top: 0px;
+  	left: 0px;
+  	background: rgba(0,0,0,0.7);
+  	border-radius: 6px 6px 0 0;
+  	width: 100%;
+  	height: 100%;
+ 	color: #fff;
+ 	opacity: 0;
+ 	-o-transition: all 0.5s linear 0s;
+	-webkit-transition: all 0.5s linear 0s;
+	-moz-transition: all 0.5s linear 0s;
+	-o-transition: all 0.5s linear 0s;
+	transition: all 0.5s linear 0s;
+}
+.wrap-workimg .worklink-img:hover {
+	opacity: 1;
 }
 .worklist-item .worklink {
 	display: block;

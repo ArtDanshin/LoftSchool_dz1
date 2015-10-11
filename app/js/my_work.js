@@ -14,7 +14,9 @@ $(document).ready(function() {
 			$this = $(this),
 			value = $this.val(),
 			pureVal = value.replace(/c:\\fakepath\\/gmi, "");
-
+			if (pureVal === '') {
+				pureVal = 'Загрузите изображение';
+			}
 		$('.popup-input-fake').text(pureVal);
 
 	});
