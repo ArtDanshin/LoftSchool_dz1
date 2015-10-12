@@ -121,8 +121,8 @@
 	text-decoration: none;
 	padding-top: 90px;
 	padding-left: 23px;
-	width: 100%;
-	height: 100%;
+	height: 48px; 
+	width: 140px;
 
 }
 .wrap-workadd .workadd:before {
