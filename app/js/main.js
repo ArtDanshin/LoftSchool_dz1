@@ -1,3 +1,3 @@
 $(document).ready(function() {
-	//console.log("Im a hero!")
+	console.log('Im a hero!');
 });
