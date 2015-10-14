@@ -191,7 +191,7 @@
 	margin: 0;
 	margin-bottom: 7px;
 }
-.wrap-popup-input .popup-input {
+.popup-input {
 	display: block;
 	width: 300px;
 	padding: 12px 10px 12px 10px;
@@ -208,10 +208,10 @@
 	background: -ms-linear-gradient(top, #fbfcfd 0%,#f4f3f3 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #fbfcfd 0%,#f4f3f3 100%); /* W3C */
 }
-.wrap-popup-input .popup-input::-moz-placeholder {
+.popup-input::-moz-placeholder {
 	color: #c7c6c6;
 }
-.wrap-popup-input .popup-input::-webkit-input-placeholder {
+.popup-input::-webkit-input-placeholder {
 	color: #c7c6c6;
 }
 .wrap-popup-input .wrap-popup-input-file {
@@ -253,7 +253,7 @@
  	border-left: 1px #d6d5d3 solid;
  	background: url("../img/cloud.png") center center no-repeat; 
 }
-.wrap-popup-input .popup-input-textarea {
+.popup-input-textarea {
 	display: block;
 	width: 300px;
 	padding: 12px 10px 12px 10px;
@@ -272,10 +272,10 @@
 	background: linear-gradient(to bottom, #fbfcfd 0%,#f4f3f3 100%); /* W3C */
 	resize: none;
 }
-.wrap-popup-input .popup-input-textarea::-moz-placeholder {
+.popup-input-textarea::-moz-placeholder {
 	color: #c7c6c6;
 }
-.wrap-popup-input .popup-input-textarea::-webkit-input-placeholder {
+.popup-input-textarea::-webkit-input-placeholder {
 	color: #c7c6c6;
 }
 .wrap-popup-button {
@@ -330,4 +330,28 @@
 
 	text-indent: -9999px;
 	background: url(../img/cross.png) no-repeat;
+}
+
+/* Стилизация валидации Input и qTip */
+
+.input-error {
+	border: 1px #d67c5a solid;
+}
+.qtip-mystyle.qtip-rounded {
+	font-family: "OpenSans_Semibold";
+	font-size: 12px;
+	padding: 1px 0;
+	color: #9a4e32;
+	background: #f3a58b; /* Old browsers */
+	background: -moz-linear-gradient(top, #f3a58b 0%, #d8825e 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3a58b), color-stop(100%,#d67a59)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f3a58b 0%,#d8825e 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f3a58b 0%,#d8825e 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f3a58b 0%,#d8825e 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f3a58b 0%,#d8825e 100%); /* W3C */ 
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+	border: 1px #d67c5a solid;
+	-webkit-box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,0.25);
+	-moz-box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,0.25);
+	box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,0.25);
 }

@@ -34,33 +34,36 @@ var myModule = (function () {
 //Popup
 	var _showModal = function (event) { 
 		event.preventDefault();
-		$('.popup').bPopup({
+
+		var divPopup = $('.popup'),
+			form = divPopup.find('form');
+
+		divPopup.bPopup({
 			closeClass: 'popup-close',
 			onClose: function() {
-
+				form.trigger('reset');
 			}
 		});
 	};
 
-//Валидация и добавление проекта
+//Добавление проекта
 	var _addProject = function (event) {
-		console.log('I am super Hero!');
 		event.preventDefault();
 
-		//Объявляем переменые
 		var form = $(this),
 			url = 'add_project.php',
-			myServerGiveMeAnswer = _ajaxForm(form,url)
-			console.log(data);
+			defObj = _ajaxForm(form,url)
 
-		//Ajax запрос на сервер
-		myServerGiveMeAnswer.done(function(ans) {
-			if (ans.status ==='OK') {
-				console.log(ans.text);
-			} else {
-				console.log(ans.text);
-			}
-		})
+		//Если JS валидация успешна, то Ajax запрос на сервер
+		if (defObj) {
+			defObj.done(function(ans) {
+				if (ans.status ==='OK') {
+					console.log(ans.text);
+				} else {
+					console.log(ans.text);
+				}
+			})
+		}
 	};
 
 //Универсальня функция
@@ -72,7 +75,7 @@ var myModule = (function () {
 // 3. Делает запрос на сервер и возвращает ответ с сервера
 var _ajaxForm = function (form, url) {
 
-		//if (!valid) return false;
+		if (!validation.validateForm(form)) return false;
 
 		data = form.serialize();
 

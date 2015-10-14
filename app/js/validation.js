@@ -17,6 +17,7 @@ var validation = (function () {
 
 	var _clearForm = function (form) {
 		var form = $(this);
+		console.log('Lol');
 		form.find('input, textarea').trigger('hideTooltip');
 		form.find('.input-error').removeClass('input-error')
 	};
@@ -28,17 +29,17 @@ var validation = (function () {
 		if (position === 'rigth') {
 			position = {
 				my: 'left center',
-				at: 'rigth center'
+				at: 'right center'
 			}
 		} else {
 			position = {
-				my: 'rigth center',
+				my: 'right center',
 				at: 'left center',
 				adjust: {
 					method: 'shift none'
 				}
-			}
-		};
+			};
+		}
 
 		// Инициализируем qTip
 		element.qtip({
@@ -57,8 +58,8 @@ var validation = (function () {
 			style: {
 				classes: 'qtip-mystyle qtip-rounded',
 				tip: {
-					height: 10,
-					width: 16
+					height: 3,
+					width: 10
 				}
 			}
 		}).trigger('show');

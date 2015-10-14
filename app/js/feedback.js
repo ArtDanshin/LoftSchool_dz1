@@ -12,7 +12,6 @@ var contactMe = (function() {
 
 	//Отправка формы
 	var _submitForm = function(event){
-		console.log('Отправка формы')
 		event.preventDefault();
 
 		var form = $(this),
@@ -23,7 +22,6 @@ var contactMe = (function() {
 	};
 
 	var _ajaxForm = function(form, url) {
-		console.log('Ajax запрос')
 		if (!validation.validateForm(form)) return false;
 		// Если false, то код ниже не выполнится
 
