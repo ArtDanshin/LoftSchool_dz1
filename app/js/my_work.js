@@ -32,11 +32,13 @@ var myModule = (function () {
 	};
 
 //Popup
-	var _showModal = function (event) {
-		console.log('I am Hero!');
+	var _showModal = function (event) { 
 		event.preventDefault();
 		$('.popup').bPopup({
-			closeClass: 'popup-close'
+			closeClass: 'popup-close',
+			onClose: function() {
+
+			}
 		});
 	};
 
@@ -48,29 +50,44 @@ var myModule = (function () {
 		//Объявляем переменые
 		var form = $(this),
 			url = 'add_project.php',
-			data = form.serialize();
-
-		console.log(data);
+			myServerGiveMeAnswer = _ajaxForm(form,url)
+			console.log(data);
 
 		//Ajax запрос на сервер
-		$.ajax({
-			url: url,
-			type: 'POST',
-			dataType: 'json',
-			data: data
+		myServerGiveMeAnswer.done(function(ans) {
+			if (ans.status ==='OK') {
+				console.log(ans.text);
+			} else {
+				console.log(ans.text);
+			}
 		})
-		.done(function(ans) {
-			console.log("success");
-			console.log(ans);
-		})
-		.fail(function() {
-			console.log("error");
-		})
-		.always(function() {
-			console.log("complete");
-		});
-		
-}
+	};
+
+//Универсальня функция
+// Для ее работы используется
+// @form - форма
+// @url - адрес php файла к которому мы обращаемся
+// 1. Собирает данные из формы
+//2. Проверяет форму
+// 3. Делает запрос на сервер и возвращает ответ с сервера
+var _ajaxForm = function (form, url) {
+
+		//if (!valid) return false;
+
+		data = form.serialize();
+
+		var result = $.ajax({
+				url: url,
+				type: 'POST',
+				dataType: 'json',
+				data: data
+				})
+				.fail(function(ans) {
+					console.log('Проблемы в PHP');
+				});
+
+		return result;
+	};
 
 //Возвращаем значения
 	return {
