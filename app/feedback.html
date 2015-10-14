@@ -9,14 +9,15 @@
 	<meta name="keywords" content="LoftSchool,dz1,artem,danshin">
 	<meta name="author" content="Artem Danshin">
 	<!-- favicon.ico-->
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<!-- bower CSS -->
-	<link rel="stylesheet" type="text/css" href="/bower/normalize-css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="/fonts/opensans.css">
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
-	<link rel="stylesheet" type="text/css" href="/css/feedback.css">
+	<link rel="stylesheet" type="text/css" href="fonts/opensans.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/feedback.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.qtip.css">
 	<!-- modernizer-->
 	<script src="bower/modernizer/modernizr.js"></script>
 </head>
@@ -83,19 +84,19 @@
 					<section class="feedbox">
 						<h2 class="feedbox-header">У вас интересный проект? Напишите мне!</h2>
 						<div class="feedbox-body">
-							<form action="" name="Feedback">
+							<form action="" id="feedback-form" name="feedback">
 								<div class="feedform clearfix">
 									<div class="feedname">
 										<div class="feed-head">Имя</div>
-										<input class="feed-input name" type="text" name="name" placeholder="Как к Вам обращаться">
+										<input class="feed-input name" id="feed-form-name" type="text" name="name" placeholder="Как к Вам обращаться" qtip-content="Вы не ввели имя" qtip-position="left">
 									</div>
 									<div class="feedmail">
 										<div class="feed-head">Email</div>
-										<input class="feed-input mail" type="text" name="mail" placeholder="Куда мне писать">
+										<input class="feed-input mail" id="feed-form-mail" type="text" name="mail" placeholder="Куда мне писать" qtip-content="Вы не ввели почтовый адрес" qtip-position="rigth">
 									</div>
 									<div class="feedmessage">
 										<div class="feed-head">Сообщение</div>
-										<textarea class="feed-input message" type="text" name="message" placeholder="Кратко в чем суть"></textarea>
+										<textarea class="feed-input message"  id="feed-form-message" type="text" name="message" placeholder="Кратко в чем суть" qtip-content="Вы не ввели сообщение" qtip-position="left"></textarea>
 									</div>
 									<div class="feedcapcha clearfix">
 										<div class="feed-head">Введите код, указанный на картинке</div>
@@ -104,7 +105,7 @@
 												<div class="capchaimg"></div>
 											</div>
 											<div class="wrap-capcha-input">
-												<input class="feed-input capcha" type="text" name="capcha" placeholder="Введите код">
+												<input class="feed-input capcha"  id="feed-form-capcha" type="text" name="capcha" placeholder="Введите код" qtip-content="Вы не ввели капчу" qtip-position="rigth">
 											</div>
 										</div>
 									</div>
@@ -134,8 +135,9 @@
 		</div>
 	</footer>
 	<script src="bower/jquery/dist/jquery.js"></script>
-	<script src="/bower/jquery-placeholder/jquery.placeholder.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+	<script src="bower/qtip2/jquery.qtip.min.js"></script>
+	<script src="js/validation.js"></script>
 	<script src="js/feedback.js"></script>
 </body>
 </html>
