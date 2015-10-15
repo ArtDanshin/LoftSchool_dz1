@@ -3,7 +3,7 @@
 	background: #f3f2f1;
 	border-radius: 4px;
 	border: 1px #bfbfbf solid;
-	margin-bottom: 26px;
+	margin-bottom: 35px;
 }
 .aboutbox .aboutbox-header {
 	font-family: 'OpenSans_SemiBold';
@@ -24,7 +24,7 @@
 	background: linear-gradient(to bottom, #a9a7a7 0%,#a9a7a7 1%,#7b7979 100%); /* W3C */
 }
 .aboutbox-body {
-	padding-bottom: 40px;
+	padding-bottom: 15px;
 }
 /* Общие стили для всех секций - Конец*/
 
@@ -124,21 +124,39 @@
 /* Опыт работы и образование */
 .aboutbox .aboutbox-list {
 	list-style: none;
-	padding: 0px 0 0 43px;
+	padding: 0 0 10px 43px;
 	margin: 0;
 }
 .aboutbox .aboutbox-item {
-	padding: 0px 0 20px 96px; /* Чувствую косяк*/
-	margin: 20px 0 0px 0;
-	min-height: 55px;
+	display: block;
+	position: relative;
+	padding: 24px 0 24px 96px; 
 	width: 500px;
-	line-height: 1.4;
-	border-bottom: 1px #dbdbda double; /* Косяк с нижними подчеркиваниями*/
+	border-top: 1px #dbdbda double;
 }
-.aboutbox .aboutbox-item:last-child {
-	margin-bottom: 0;
-	padding-bottom: 0;
-	border-bottom: 0;
+.aboutbox .aboutbox-item:after {
+	content: '';
+	position: absolute;
+	width: 54px;
+	height: 55px;
+	left: 0px;
+	top: 50%;
+	margin-top: -25px;
+}
+.aboutbox .aboutbox-item.icon-work:after {
+	background: url(../img/pt_case.png) no-repeat;
+}
+.aboutbox .aboutbox-item.icon-school:after {
+	background: url(../img/pt_school.png) no-repeat;
+}
+.aboutbox .aboutbox-item.icon-graduate:after {
+	background: url(../img/pt_graduate.png) no-repeat;
+}
+.aboutbox .aboutbox-item.icon-file:after {
+	background: url(../img/pt_file.png) no-repeat;
+}
+.aboutbox .aboutbox-item:first-child {
+	border-top: 0;
 }
 .aboutbox-item .where {
 	font-family: 'OpenSans_SemiBold';
@@ -147,18 +165,6 @@
 .aboutbox-item .period {
 	font-family: 'OpenSans_Regular';
 	font-size: 14px;
-	line-height: 1.2;
-}
-.icon-work {
-	background: url(../img/pt_case.png) no-repeat;
-}
-.icon-school {
-	background: url(../img/pt_school.png) no-repeat;
-}
-.icon-graduate {
-	background: url(../img/pt_graduate.png) no-repeat;
-}
-.icon-file {
-	background: url(../img/pt_file.png) no-repeat;
+	margin-top: 3px;
 }
 
