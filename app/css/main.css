@@ -60,7 +60,7 @@ body {
 .page-header .socials {
 	position: absolute;
 	right: 0;
-	top: 26px;
+	top: 24px;
 }
 /* Шапка конец */
 
@@ -68,14 +68,14 @@ body {
 .socials {
 	margin: 0;
 	padding: 0;
-	min-width: 260px;
+	min-width: 200px;
 }
 .socials .socials-item {
 	list-style: none;
 	display: inline-block;
 	height: 44px;
 	width: 42px;
-	margin-left: 19px; 
+	margin-left: 8px; 
 }
 .socials .socials-item:first-child {
 	margin-left: 0;
