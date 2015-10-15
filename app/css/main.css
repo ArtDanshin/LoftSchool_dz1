@@ -7,6 +7,8 @@ body {
 	background-size: cover;
 	font: normal 62.5% 'OpenSans_Regular', Verbana, Arial, Helvetica, sans-serif;
 	color: #727070;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg.jpg', sizingMethod='scale')";
 }
 
 /* Прибиваем футер к низу */
