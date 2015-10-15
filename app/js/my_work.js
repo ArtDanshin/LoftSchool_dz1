@@ -27,7 +27,7 @@ var myModule = (function () {
 
 // Прослушивание событий
 	var _setUpListners = function () {
-		$('.workadd').on('click', _showModal); //Открыть Popup
+		$('.wrap-workadd').on('click', _showModal); //Открыть Popup
 		$('#add-project-form').on('submit', _addProject);
 	};
 
