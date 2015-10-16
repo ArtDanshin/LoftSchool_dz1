@@ -213,9 +213,15 @@
 	color: #c7c6c6;
 }
 .wrap-popup-input .wrap-popup-input-file {
-	cursor: pointer;
 	position: relative;
 	display: block;
+	width: 320px;
+	height: 40px;
+}
+.popup-input-fake {
+	display: block;
+	font-family: "OpenSans_Ligth";
+	font-size: 12px;
 	width: 300px;
 	height: 15px;
 	padding: 12px 10px 12px 10px;
@@ -238,17 +244,24 @@
 	top: 0;
 	left: -9999px;
 }
-.wrap-popup-input .popup-input-fake {
-	font-family: "OpenSans_Ligth";
-	font-size: 12px;
-}
-.wrap-popup-input .popup-input-img {
+.wrap-file-icon {
+	width: 40px;
+	height: 40px;
 	position: absolute;
+	cursor: pointer;
  	right: 0;
  	bottom: 0;
  	top: 0;
  	left: 268px;
  	border-left: 1px #d6d5d3 solid;
+}
+.wrap-popup-input .popup-input-img {
+	position: absolute;
+	width: 25px;
+	height: 16px;
+	top: 50%;
+	margin-top: -8px;
+	left: 12px;
  	background: url("../img/cloud.png") center center no-repeat; 
 }
 .popup-input-textarea {

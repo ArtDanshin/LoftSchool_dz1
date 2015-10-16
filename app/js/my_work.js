@@ -1,19 +1,5 @@
 $(document).ready(function() {
 	jQuery('input[placeholder], textarea[placeholder]').placeholder();
-
-	$('.popup-input-file').on('change', function(){
-		var
-			$this = $(this),
-			value = $this.val(),
-			pureVal = value.replace(/c:\\fakepath\\/gmi, "");
-			console.log(pureVal);
-			console.log(this);
-			if (pureVal === '') {
-				pureVal = 'Загрузите изображение';
-			}
-		$('.popup-input-fake').text(pureVal);
-
-	});
 })
 
 //New JS File - Video LoftBlog
@@ -29,7 +15,20 @@ var myModule = (function () {
 	var _setUpListners = function () {
 		$('.wrap-workadd').on('click', _showModal); //Открыть Popup
 		$('#add-project-form').on('submit', _addProject);
+		$('#fileproj').on('change', _changeFile);
 	};
+
+//Добавление файла в форму
+	var _changeFile = function () {
+		var $this = $(this),
+			value = $this.val(),
+			pureVal = value.replace(/c:\\fakepath\\/gmi, "");
+		if (pureVal === '') {
+				pureVal = 'Загрузите изображение';
+			};
+		$('.popup-input-fake').val(pureVal).trigger('hideTooltip').removeClass('input-error');	
+
+	}
 
 //Popup
 	var _showModal = function (event) { 

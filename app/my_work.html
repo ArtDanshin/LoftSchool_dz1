@@ -152,16 +152,18 @@
 						<div class="wrap-popup-form-inner">
 							<div class="wrap-popup-input">
 								<div class="popup-input-head">Название проекта</div>
-								<input type="text" class="popup-input" name="nameproj" placeholder="введите название" qtip-content="Вы не ввели навание" qtip-position="left">
+								<input type="text" class="popup-input" name="nameproj" placeholder="Введите название" qtip-content="введите название" qtip-position="left">
 							</div>
-							<label class="wrap-popup-input">
+							<div class="wrap-popup-input">
 								<div class="popup-input-head">Картинка проекта</div>
-								<div class="wrap-popup-input-file">
-									<div class="popup-input-fake">Загрузите изображение</div>
-									<input type="file" class="popup-input-file" name="fileproj" placeholder="Загрузите изображение" qtip-content="изображение" qtip-position="left">
-									<div class="popup-input-img"></div>
+								<div class="wrap-popup-input-file" >
+									<input type="text" class="popup-input-fake" name="filename" placeholder="Загрузите изображение" qtip-content="изображение" qtip-position="left" disabled>
+									<label class="wrap-file-icon">
+										<input type="file" class="popup-input-file" id="fileproj" name="fileproj">
+										<div class="popup-input-img"></div>
+									</label>
 								</div>
-							</label>
+							</div>
 							<div class="wrap-popup-input">
 								<div class="popup-input-head">URL проекта</div>
 								<input type="text" class="popup-input" name="urlproj" placeholder="Добавьте ссылку" qtip-content="ссылка на проект" qtip-position="left">
