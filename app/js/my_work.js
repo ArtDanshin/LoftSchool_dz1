@@ -1,9 +1,3 @@
-$(document).ready(function() {
-	jQuery('input[placeholder], textarea[placeholder]').placeholder();
-})
-
-//New JS File - Video LoftBlog
-
 var myModule = (function () {
 
 // Инициализация
@@ -97,4 +91,10 @@ var _ajaxForm = function (form, url) {
 	}
 })();
 
+if (typeof console === "undefined" || typeof console.log === "undefined") {
+     console = {};
+     console.log = function() {};
+	};
+	
 myModule.init();
+jQuery('input[placeholder], textarea[placeholder]').placeholder();

@@ -17,7 +17,6 @@ var validation = (function () {
 
 	var _clearForm = function (form) {
 		var form = $(this);
-		console.log('Lol');
 		form.find('input, textarea').trigger('hideTooltip');
 		form.find('.input-error').removeClass('input-error')
 	};

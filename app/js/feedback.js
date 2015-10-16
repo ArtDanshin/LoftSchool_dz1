@@ -32,6 +32,11 @@ var contactMe = (function() {
 	}
 })();
 
+if (typeof console === "undefined" || typeof console.log === "undefined") {
+     console = {};
+     console.log = function() {};
+	};
+	
 contactMe.init();
 
 jQuery('input[placeholder], textarea[placeholder]').placeholder();
