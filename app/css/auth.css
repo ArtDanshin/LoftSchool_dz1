@@ -147,7 +147,7 @@
 
 /* Стилизация валидации Input и qTip */
 
-.input-error {
+.wrap-auth-form-inner .input-error {
 	border: 1px #d67c5a solid;
 }
 .qtip-mystyle.qtip-rounded {

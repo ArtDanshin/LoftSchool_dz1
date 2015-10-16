@@ -63,7 +63,10 @@
 .worksheet-info {
 	margin-left: 25px; 
 	padding-left:10px;
-	max-width: 260px;
+	font-family: 'OpenSans_Regular';
+	font-size: 14px;
+	overflow: hidden;
+	max-width: 290px;
 }
 .worksheet-item {
 	margin-bottom: 7px; 
@@ -72,12 +75,6 @@
 	font-family: 'OpenSans_Semibold';
 	font-size: 14px;
 	float: left;
-}
-.worksheet-info {
-	font-family: 'OpenSans_Regular';
-	font-size: 14px;
-	overflow: hidden;
-	max-width: 218px;
 }
 /* Список анкетных данных - Конец */
 
