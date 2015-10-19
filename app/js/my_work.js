@@ -32,6 +32,7 @@ var myModule = (function () {
 			form = divPopup.find('form');
 
 		divPopup.bPopup({
+            positionStyle: 'absolute',
 			closeClass: 'popup-close',
 			onClose: function() {
 				form.trigger('reset');
