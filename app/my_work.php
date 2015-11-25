@@ -97,7 +97,7 @@
 									while ($row = mysqli_fetch_array($data)) {
 										echo '<li class="worklist-item">';
 											echo '<div class="wrap-workimg">';
-												echo '<a href="#"><img src="php/' . $row['img'] . '" alt="a-industry.ru site" class="workimg"></a>';
+												echo '<a href="#"><img src="php/' . $row['img'] . '" alt="' . $row['site'] . ' site" class="workimg"></a>';
 												echo '<a href="#" class="worklink-img">Подробнее</a>';
 											echo '</div>';
 											echo '<a class="worklink" href="' . $row['url'] . '">' . $row['site'] . '</a>';
