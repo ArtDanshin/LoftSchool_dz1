@@ -14,6 +14,7 @@ gulp.task('server', function () {
 gulp.task('watch', function () {
 	gulp.watch([
 		'app/*.html',
+		'app/*.php',
 		'app/js/*.js',
 		'app/css/*.css'
 	]).on('change', browserSync.reload);
