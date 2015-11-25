@@ -10,17 +10,12 @@
 
 	mysqli_query($dbc, $query);
 
+	mysqli_close($dbc);
+
 	$data = array();
 
-	if ($name === '') {
-		$data['status'] = 'ERROR!';
-		$data['text'] = 'Заполните имя!';
-	} else {
-		$data['status'] = 'OK';
-		$data['text'] = 'Вы молодец! Имя заполнено!' . $name . $file_name . $url . $text;
-	}
+	$data['status'] = 'OK';
 	
-
 	header("Content-Type: application/json");
 	echo json_encode($data);
 	exit;
