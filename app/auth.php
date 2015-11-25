@@ -1,3 +1,13 @@
+<?php
+	session_start();
+
+	if (isset($_POST['username'])) {
+		if ( ($_POST['username'] == 'root') && ($_POST['password']) == '1234') {
+			$_SESSION['username'] = 'root';
+			echo '<script>document.location.href = "index.php";</script>';
+		}
+	}
+?>
 <!DOCTYPE html>
 <html lang="ru-Ru">
 <head>
@@ -28,10 +38,10 @@
 			<div class="wrap-auth">
 				<p class="auth-head">Авторизуйтесь</p>
 				<div class="wrap-auth-form">
-					<form action="" id="authform" >
+					<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 						<div class="wrap-auth-form-inner">
 							<div class="wrap-auth-input">
-								<input type="text" class="auth-input" name="mail" placeholder="Введите Email" qtip-content="введите email" qtip-position="rigth">
+								<input type="text" class="auth-input" name="username" placeholder="Введите Email" qtip-content="введите email" qtip-position="rigth">
 								<div class="auth-input-img mail"></div>
 							</div>
 							<div class="wrap-auth-input">

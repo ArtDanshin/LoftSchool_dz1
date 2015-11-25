@@ -4,7 +4,7 @@
 	$text = $_POST['descproj'];
 	$file_name = $_POST['filenameurl'];
 
-	$dbc = mysqli_connect('localhost', 'SilverDragoon', '070707', 'silver4275_loft1');
+	$dbc = mysqli_connect('localhost', 'root', '', 'silver4275_loft1');
 
 	$query = "INSERT INTO portfolio VALUES ('$name', '$url', '$text', '$file_name')";
 
@@ -19,5 +19,5 @@
 	header("Content-Type: application/json");
 	echo json_encode($data);
 	exit;
-
+ 
 ?>

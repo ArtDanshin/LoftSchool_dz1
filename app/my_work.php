@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="ru-Ru">
 <head>
@@ -52,13 +55,13 @@
 					<nav class="navigation">
 						<ul class="navigation-list">
 							<li class="navigation-item">
-								<a href="" class="navigation-link">Обо мне</a>
+								<a href="index.php" class="navigation-link">Обо мне</a>
 							</li>
 							<li class="navigation-item current">
-								<a href="my_work.html" class="navigation-link">Мои Работы</a>
+								<a href="" class="navigation-link">Мои Работы</a>
 							</li>
 							<li class="navigation-item">
-								<a href="feedback.html" class="navigation-link">Обратная связь</a>
+								<a href="feedback.php" class="navigation-link">Обратная связь</a>
 							</li>
 						</ul>
 					</nav>
@@ -86,7 +89,7 @@
 						<div class="workbox-body">
 							<ul class="worklist">
 								<?php 
-									$dbc = mysqli_connect('localhost', 'SilverDragoon', '070707', 'silver4275_loft1');
+									$dbc = mysqli_connect('localhost', 'root', '', 'silver4275_loft1');
 
 									$query = "SELECT * FROM portfolio";
 									$data = mysqli_query($dbc, $query);
@@ -102,12 +105,16 @@
 									}
 
 									mysqli_close($dbc);
+									if ( isset($_SESSION['username']) ) {
 								?>
 								<li class="worklist-item">
 									<div class="wrap-workadd">
 										<span class="workadd" >Добавить проект</span>
 									</div>
 								</li>
+								<?php
+									}
+								?>
 							</ul>
 						</div>
 					</section>
@@ -116,7 +123,7 @@
 			<div class="popup">
 				<p class="popup-head">Добавление проекта</p>
 				<div class="wrap-popup-form">
-					<form action="php/add_project.php" id="add-project-form" name="addWork" enctype="multipart/form-data" method="POST">
+					<form action="php/add_project.php" name="addWork" enctype="multipart/form-data" method="POST">
 						<div class="wrap-popup-form-inner">
 							<div class="wrap-popup-input">
 								<div class="popup-input-head">Название проекта</div>
@@ -155,7 +162,13 @@
 	<footer class="page-footer">
 		<div class="container">
 			<div class="lock">
-				<a href="auth.html" class="lock-inner">вход</a>
+				<?php
+					if ( !isset($_SESSION['username']) ) {
+						echo '<a href="auth.php" class="lock-inner">вход</a>';
+					} else {
+						echo '<a href="php/logout.php" class="lock-inner">выход</a>';
+					}
+				?>
 			</div>
 			<div class="copyright">2015, Это сайт Артёма Даньшина, пожалуйста, не копируйте и не воруйте его
 			</div>
