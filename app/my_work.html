@@ -148,7 +148,7 @@
 			<div class="popup">
 				<p class="popup-head">Добавление проекта</p>
 				<div class="wrap-popup-form">
-					<form action="" id="add-project-form" name="addWork">
+					<form action="php/add_project.php" id="add-project-form" name="addWork" enctype="multipart/form-data" method="POST">
 						<div class="wrap-popup-form-inner">
 							<div class="wrap-popup-input">
 								<div class="popup-input-head">Название проекта</div>
@@ -158,6 +158,7 @@
 								<div class="popup-input-head">Картинка проекта</div>
 								<div class="wrap-popup-input-file" >
 									<input type="text" class="popup-input-fake" name="filename" placeholder="Загрузите изображение" qtip-content="изображение" qtip-position="left" disabled>
+									<input type="text" class="popup-input-fake-url" name="filenameurl">
 									<label class="wrap-file-icon">
 										<input type="file" class="popup-input-file" id="fileproj" name="fileproj">
 										<div class="popup-input-img"></div>
@@ -199,6 +200,7 @@
 	<script src="bower/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
 	<script src="bower/blueimp-file-upload/js/jquery.iframe-transport.js"></script>
 	<script src="bower/blueimp-file-upload/js/jquery.fileupload.js"></script>
+	<script src="bower/blueimp-file-upload/js/jquery.fileupload-process.js"></script>
 	<script src="bower/blueimp-file-upload/js/jquery.fileupload-ui.js"></script>
 	<script src="js/validation.js"></script>
 	<script src="js/my_work.js"></script>
