@@ -239,6 +239,10 @@
 	background: -ms-linear-gradient(top, #fbfcfd 0%,#f4f3f3 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #fbfcfd 0%,#f4f3f3 100%); /* W3C */
 }
+.popup-input-fake-url {
+	position: absolute;
+	left: -9999px;
+}
 .wrap-popup-input .popup-input-file {
 	position: absolute;
 	top: 0;

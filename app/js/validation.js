@@ -21,7 +21,7 @@ var validation = (function () {
 		form.find('.input-error').removeClass('input-error')
 	};
 
-	//Создает qTip
+	//Создаем qTip
 	var _createQtip = function (element, position) {
 
 		//Позиция qTip
